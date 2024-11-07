@@ -15,5 +15,5 @@ spec:
             name: guestbook-ui
             port:
               number: 80
-        path: /app
+        path: /
         pathType: Prefix
