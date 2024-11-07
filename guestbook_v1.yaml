@@ -27,7 +27,7 @@ spec:
             memory: "600Mi"
             cpu: "500m"
       nodeSelector:
-        gke-nodepool: my-node-pool-1  
+        cloud.google.com/gke-nodepool: my-node-pool-1  
 
 
         
