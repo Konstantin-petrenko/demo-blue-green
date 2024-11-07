@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui-v1
+  namespace: ingress-nginx
 spec:
   replicas: 1
   revisionHistoryLimit: 3
@@ -18,3 +19,13 @@ spec:
         name: guestbook-ui-v1
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: "500Mi"
+            cpu: "250m"
+          limits:
+            memory: "600Mi"
+            cpu: "500m"
+
+
+        
